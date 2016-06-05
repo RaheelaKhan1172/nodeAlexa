@@ -1,0 +1,13 @@
+GetRecipeFromIngredients I have {Ingredients}
+GetRecipeFromIngredients What can I with {Ingredients}
+GetRecipeFromIngredients {Ingredients}
+GetRecipeFromIngredients Alexa, what can I with {Ingredients}
+GetRecipeFromIngredients Surprise me
+GetRecipeFromIngredients Alexa, surprise me
+
+
+GetNextEventIntent yes
+GetNextEventIntent sure
+GetNextEventIntent yup
+GetNextEventIntent yes please
+GetNextEventIntent mmhmm
