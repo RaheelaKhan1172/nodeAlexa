@@ -1,0 +1,23 @@
+/* currently intents are for recipes only not individual ingredients */
+
+{
+    "intents":[
+        {
+            "intent": "GetRecipeFromIngredients",
+            slots:[
+                {
+                    "name":"Ingredients"
+                }
+            ]
+        },
+        {
+            "intent":"GetNextEventIntent"
+        },
+        {
+            "intent":"RepeatIntent"
+        },
+        {
+            "intent":"AMAZON.StopIntent"
+        }
+    ]
+}

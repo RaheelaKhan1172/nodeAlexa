@@ -1,3 +1,5 @@
+/* note to self--these are for recipes only, not individual ingredients */
+
 GetRecipeFromIngredients I have {Ingredients}
 GetRecipeFromIngredients What can I with {Ingredients}
 GetRecipeFromIngredients {Ingredients}
@@ -11,3 +13,12 @@ GetNextEventIntent sure
 GetNextEventIntent yup
 GetNextEventIntent yes please
 GetNextEventIntent mmhmm
+
+RepeatIntent What was that again
+RepeatIntent What was the previous ingredient
+RepeatIntent Can you again 
+RepeatIntent Repeat 
+
+AMAZON.StopIntent Done
+AMAZON.StopIntent Finished
+AMAZON.StopIntent All Done
