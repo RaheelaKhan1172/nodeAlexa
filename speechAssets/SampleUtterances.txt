@@ -4,6 +4,8 @@ GetRecipeFromIngredients I have {Ingredients}
 GetRecipeFromIngredients What can I with {Ingredients}
 GetRecipeFromIngredients {Ingredients}
 GetRecipeFromIngredients Alexa, what can I with {Ingredients}
+GetRecipeFromIngredients What {ingredients}
+GetRecipeFromIngredients Find something with {ingredients}
 GetRecipeFromIngredients Surprise me
 GetRecipeFromIngredients Alexa, surprise me
 
@@ -15,10 +17,11 @@ GetNextEventIntent yes please
 GetNextEventIntent mmhmm
 
 RepeatIntent What was that again
-RepeatIntent What was the previous ingredient
+RepeatIntent What was the previous recipe
 RepeatIntent Can you again 
 RepeatIntent Repeat 
 
 AMAZON.StopIntent Done
 AMAZON.StopIntent Finished
 AMAZON.StopIntent All Done
+AMAZON.StopIntent Exit

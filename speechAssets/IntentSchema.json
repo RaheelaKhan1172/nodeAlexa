@@ -1,12 +1,12 @@
 /* currently intents are for recipes only not individual ingredients */
-
 {
     "intents":[
         {
             "intent": "GetRecipeFromIngredients",
-            slots:[
+            "slots":[
                 {
-                    "name":"Ingredients"
+                    "name":"Ingredients",
+                    "type": "LIST_OF_INGREDIENTS"
                 }
             ]
         },
@@ -18,6 +18,12 @@
         },
         {
             "intent":"AMAZON.StopIntent"
+        },
+        {
+            "intent":"AMAZON.HelpIntent"
+        },
+        {
+            "intent":"AMAZON.CancelIntent"
         }
     ]
 }
