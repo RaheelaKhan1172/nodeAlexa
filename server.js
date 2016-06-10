@@ -15,22 +15,20 @@ var arr = [];
    
   function up(index) { 
   chunk = '';
-  console.log('index', index);
   http.get('http://www.food.com/services/mobile/fdc/search/sectionfront?pn='+index+'&searchTerm=&recordType=Ingredient', (res) => {
-    console.log('i think i happen', res.statusCode);
+      
     res.on('data',(d) => {
       chunk += d;
     });
+      
     res.on('end', () => {
       handleRes(chunk,function() {
         checkDone(function(index) {
-          console.log('the index', index);
           if (index === 100) {
             arr = arr.join('\n');
-            console.log(arr);
             fs.writeFile('./speechAssets/customSlotTypes/LIST_OF_INGREDIENTS', arr, function(e) {
               if (e) {
-                console.log('error',e);
+                throw e;
               }
               console.log('done');
             });
